@@ -25,7 +25,7 @@ pipeline {
         stage('Check Status') {
             steps {
                 // Wait a bit for services to start
-                sh 'sleep 20'
+                sh 'sleep 120'
                 echo 'Checking container status...'
                 sh 'docker ps'
             }
